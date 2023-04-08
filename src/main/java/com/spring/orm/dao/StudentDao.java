@@ -14,7 +14,7 @@ public class StudentDao {
 	@Transactional
 	public int insert(Student student) {
 //		insert
-		int i  = (Integer) this.hibernateTemplate.save(hibernateTemplate);
+		int i  = (Integer) this.hibernateTemplate.save(student);
 		return i;
 	}
 	
